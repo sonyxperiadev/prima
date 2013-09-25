@@ -4277,7 +4277,9 @@ VOS_STATUS hdd_start_all_adapters( hdd_context_t *pHddCtx )
          case WLAN_HDD_P2P_GO:
             hddLog(VOS_TRACE_LEVEL_ERROR, "%s [SSR] send stop ap to supplicant",
                                                        __func__);
+#if 0
             cfg80211_ap_stopped(pAdapter->dev, GFP_KERNEL);
+#endif
             break;
 
          case WLAN_HDD_MONITOR:
