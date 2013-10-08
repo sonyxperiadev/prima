@@ -2971,6 +2971,4 @@ eHalStatus smeIssueFastRoamNeighborAPEvent (tHalHandle hHal,
                                             tANI_U8 *bssid,
                                             tSmeFastRoamTrigger fastRoamTrig);
 eHalStatus sme_RoamDelPMKIDfromCache( tHalHandle hHal, tANI_U8 sessionId, tANI_U8 *pBSSId );
-
-void smeGetCommandQStatus( tHalHandle hHal );
 #endif //#if !defined( __SME_API_H )
